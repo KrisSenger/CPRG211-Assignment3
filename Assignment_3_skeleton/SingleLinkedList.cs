@@ -16,8 +16,9 @@ namespace Assignment_3_skeleton
         {
             head = null;
         }
-
-        public bool IsEmpty()
+        
+        // Checks if the linked list is empty.
+        public bool IsEmpty() 
         {
             if (head == null)
             {
@@ -29,11 +30,14 @@ namespace Assignment_3_skeleton
             }
         }
 
+        // Clear all items in the linked list.
         public void Clear()
         {
             head = null;
             listSize = 0;
         }
+
+        // Append an item to the end of the linked list.
 
         public void Append(Object data)
         {
@@ -56,6 +60,7 @@ namespace Assignment_3_skeleton
             listSize++;
         }
 
+        // Prepend an item to the beginning of the linked list 
         public void Prepend(Object data)
         {
             Node newNode = new Node(data);
@@ -64,6 +69,7 @@ namespace Assignment_3_skeleton
             listSize++;
         }
 
+        // Insert an item at a specific index in the linked list 
         public void Insert(Object data, int index)
         {
             if (head == null)
@@ -88,6 +94,8 @@ namespace Assignment_3_skeleton
             listSize++;
         }
 
+        // Replace an item in the linked list 
+
         public void Replace(Object data, int index)
         {
             if (head == null)
@@ -110,6 +118,7 @@ namespace Assignment_3_skeleton
             currentNode.Data = newNode.Data;
         }
 
+        // Get the number of items in the linked list 
         public int Size()
         {
             if (head == null)
@@ -122,6 +131,7 @@ namespace Assignment_3_skeleton
             }
         }
 
+        // Remove an item at an index in the linked list 
         public void Delete(int nodeToDelete)
         {
             if (head == null)
@@ -149,13 +159,14 @@ namespace Assignment_3_skeleton
             throw new IndexOutOfRangeException("Node with the requested data could not be found");
         }
 
+        // Get an item at an index in the linked list 
         public Object Retrieve(int index)
         {
             if (head == null)
             {
                 return new ArgumentNullException("List is empty. Index location does not exist");
             }
-            else if (index -1 > listSize || index -1 < 0) 
+            else if (index -1 > listSize || index < 0) 
             {
                 return new IndexOutOfRangeException("Index location is out of range of the list.");
             }
@@ -171,6 +182,7 @@ namespace Assignment_3_skeleton
             return value;
         }
 
+        // Get the index of an item in the linnked list 
         public int IndexOf(Object data)
         {
             if (head == null)
@@ -197,6 +209,7 @@ namespace Assignment_3_skeleton
             return index;
         }
 
+        // Check if the linked list has an item 
         public bool Contains(Object data)
         {
             if (head == null)
@@ -218,6 +231,29 @@ namespace Assignment_3_skeleton
             return exists;
 
         }
+
+        // Reverse the order of teh nodes in the linked list 
+        public void Reverse()
+        {
+            if (head == null || head.Next == null)
+            {
+                return; // if it is an empty list or there is only one node, there is no need to reverse
+            }
+
+            Node previousNode = null;
+            Node currentNode = head;
+            Node nextNode = null;
+            while (currentNode != null)
+            {
+                nextNode = currentNode.Next;
+                currentNode = previousNode;
+                previousNode = currentNode;
+                currentNode = nextNode; 
+            }
+
+            head = previousNode; 
+        }
+
 
         public void Display()
         {
