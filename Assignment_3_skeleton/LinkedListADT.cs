@@ -59,5 +59,8 @@ namespace Assignment_3_skeleton
         //parameter data Data object to search for.
         //return True if element exists with value.
         bool Contains(Object data);
+
+        // adds all nodes into an array
+        Object[] GetArray();
     }
 }

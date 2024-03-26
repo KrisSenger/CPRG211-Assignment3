@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krist\\Documents\\School\\CPRG 211 - OOP 2\\Assignments\\Assignment 3\\Assignment_3_skeleton\\CPRG211-Assignment3\\Test_Assignment_3_1\\Test_Assignment_3_1.csproj": {}
+    "C:\\Users\\jahsa\\Documents\\SAIT Winter 2024\\CPRG 211 - OOP\\Assignments\\Assignment 3\\Assignment 3 Skeleton\\Test_Assignment_3_1\\Test_Assignment_3_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krist\\Documents\\School\\CPRG 211 - OOP 2\\Assignments\\Assignment 3\\Assignment_3_skeleton\\CPRG211-Assignment3\\Assignment_3_skeleton\\Assignment_3_skeleton.csproj": {
+    "C:\\Users\\jahsa\\Documents\\SAIT Winter 2024\\CPRG 211 - OOP\\Assignments\\Assignment 3\\Assignment 3 Skeleton\\Assignment_3_skeleton\\Assignment_3_skeleton.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\krist\\Documents\\School\\CPRG 211 - OOP 2\\Assignments\\Assignment 3\\Assignment_3_skeleton\\CPRG211-Assignment3\\Assignment_3_skeleton\\Assignment_3_skeleton.csproj",
+        "projectUniqueName": "C:\\Users\\jahsa\\Documents\\SAIT Winter 2024\\CPRG 211 - OOP\\Assignments\\Assignment 3\\Assignment 3 Skeleton\\Assignment_3_skeleton\\Assignment_3_skeleton.csproj",
         "projectName": "Assignment_3_skeleton",
-        "projectPath": "C:\\Users\\krist\\Documents\\School\\CPRG 211 - OOP 2\\Assignments\\Assignment 3\\Assignment_3_skeleton\\CPRG211-Assignment3\\Assignment_3_skeleton\\Assignment_3_skeleton.csproj",
+        "projectPath": "C:\\Users\\jahsa\\Documents\\SAIT Winter 2024\\CPRG 211 - OOP\\Assignments\\Assignment 3\\Assignment 3 Skeleton\\Assignment_3_skeleton\\Assignment_3_skeleton.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -19,20 +19,20 @@
         "net472": {}
       }
     },
-    "C:\\Users\\krist\\Documents\\School\\CPRG 211 - OOP 2\\Assignments\\Assignment 3\\Assignment_3_skeleton\\CPRG211-Assignment3\\Test_Assignment_3_1\\Test_Assignment_3_1.csproj": {
+    "C:\\Users\\jahsa\\Documents\\SAIT Winter 2024\\CPRG 211 - OOP\\Assignments\\Assignment 3\\Assignment 3 Skeleton\\Test_Assignment_3_1\\Test_Assignment_3_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krist\\Documents\\School\\CPRG 211 - OOP 2\\Assignments\\Assignment 3\\Assignment_3_skeleton\\CPRG211-Assignment3\\Test_Assignment_3_1\\Test_Assignment_3_1.csproj",
+        "projectUniqueName": "C:\\Users\\jahsa\\Documents\\SAIT Winter 2024\\CPRG 211 - OOP\\Assignments\\Assignment 3\\Assignment 3 Skeleton\\Test_Assignment_3_1\\Test_Assignment_3_1.csproj",
         "projectName": "Test_Assignment_3_1",
-        "projectPath": "C:\\Users\\krist\\Documents\\School\\CPRG 211 - OOP 2\\Assignments\\Assignment 3\\Assignment_3_skeleton\\CPRG211-Assignment3\\Test_Assignment_3_1\\Test_Assignment_3_1.csproj",
-        "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krist\\Documents\\School\\CPRG 211 - OOP 2\\Assignments\\Assignment 3\\Assignment_3_skeleton\\CPRG211-Assignment3\\Test_Assignment_3_1\\obj\\",
+        "projectPath": "C:\\Users\\jahsa\\Documents\\SAIT Winter 2024\\CPRG 211 - OOP\\Assignments\\Assignment 3\\Assignment 3 Skeleton\\Test_Assignment_3_1\\Test_Assignment_3_1.csproj",
+        "packagesPath": "C:\\Users\\jahsa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jahsa\\Documents\\SAIT Winter 2024\\CPRG 211 - OOP\\Assignments\\Assignment 3\\Assignment 3 Skeleton\\Test_Assignment_3_1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\krist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jahsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -48,8 +48,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\krist\\Documents\\School\\CPRG 211 - OOP 2\\Assignments\\Assignment 3\\Assignment_3_skeleton\\CPRG211-Assignment3\\Assignment_3_skeleton\\Assignment_3_skeleton.csproj": {
-                "projectPath": "C:\\Users\\krist\\Documents\\School\\CPRG 211 - OOP 2\\Assignments\\Assignment 3\\Assignment_3_skeleton\\CPRG211-Assignment3\\Assignment_3_skeleton\\Assignment_3_skeleton.csproj"
+              "C:\\Users\\jahsa\\Documents\\SAIT Winter 2024\\CPRG 211 - OOP\\Assignments\\Assignment 3\\Assignment 3 Skeleton\\Assignment_3_skeleton\\Assignment_3_skeleton.csproj": {
+                "projectPath": "C:\\Users\\jahsa\\Documents\\SAIT Winter 2024\\CPRG 211 - OOP\\Assignments\\Assignment 3\\Assignment 3 Skeleton\\Assignment_3_skeleton\\Assignment_3_skeleton.csproj"
               }
             }
           }
