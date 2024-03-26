@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -155,7 +156,7 @@ namespace Assignment_3_skeleton
             {
                 return new ArgumentNullException("List is empty. Index location does not exist");
             }
-            else if (index -1 > listSize || index -1 < 0) 
+            else if (index -1 > listSize || index < 0) 
             {
                 return new IndexOutOfRangeException("Index location is out of range of the list.");
             }
@@ -231,6 +232,24 @@ namespace Assignment_3_skeleton
                 // Move to the next node
                 currentNode = currentNode.Next;
             }
+        }
+        
+        public Object[] GetArray()
+        {
+            Object[] nodeArray = new Object[listSize];
+            if (head == null)
+            {
+                return nodeArray;
+            }
+            int index = 0;
+            Node currentNode = head;
+            while (currentNode != null && index < listSize)
+            {
+                nodeArray[index] = currentNode.Data;
+                index++;
+                currentNode = currentNode.Next;
+            }
+            return nodeArray;
         }
     }
 }
