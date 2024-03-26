@@ -64,8 +64,18 @@ namespace Assignment_3_skeleton
         public void Prepend(Object data)
         {
             Node newNode = new Node(data);
-            newNode.Next = head;
-            head = newNode;
+
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                newNode.Next = head;
+                head = newNode;
+            }
+
+            
             listSize++;
         }
 
@@ -243,10 +253,11 @@ namespace Assignment_3_skeleton
             Node previousNode = null;
             Node currentNode = head;
             Node nextNode = null;
+
             while (currentNode != null)
             {
                 nextNode = currentNode.Next;
-                currentNode = previousNode;
+                currentNode.Next = previousNode;
                 previousNode = currentNode;
                 currentNode = nextNode; 
             }
@@ -257,14 +268,16 @@ namespace Assignment_3_skeleton
 
         public void Display()
         {
-            // Iterate or traverse through the SLL
+            // Start from the new head (previous tail)
             Node currentNode = head;
+
+            // Traverse the list in the reversed order
             while (currentNode != null)
             {
                 // Perform operations on the current node
-                Console.Write(currentNode.Data + "\n");
+                Console.WriteLine(currentNode.Data + "\n");
 
-                // Move to the next node
+                // Move to the next node (towards the new tail)
                 currentNode = currentNode.Next;
             }
         }

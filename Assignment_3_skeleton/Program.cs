@@ -61,6 +61,13 @@ namespace Assignment_3_skeleton
             Console.WriteLine($"\nCheck list for item: Rin Tin Tin \nItem exists: {linkedList.Contains("Rin Tin Tin")}\n");
             linkedList.Display();
 
+            Console.WriteLine("\nOriginal List:");
+            linkedList.Display();
+
+            Console.WriteLine("\nReversed List: ");
+            linkedList.Reverse();
+            linkedList.Display();
+
             Console.ReadKey();
 
         }
