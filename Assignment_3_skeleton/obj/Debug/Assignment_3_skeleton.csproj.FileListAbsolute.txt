@@ -40,3 +40,10 @@ C:\Users\krist\Documents\School\CPRG 211 - OOP 2\Assignments\Assignment 3\Assign
 C:\Users\krist\Documents\School\CPRG 211 - OOP 2\Assignments\Assignment 3\Assignment_3_skeleton\CPRG211-Assignment3\Assignment_3_skeleton\obj\Debug\Assignment_3_skeleton.csproj.CoreCompileInputs.cache
 C:\Users\krist\Documents\School\CPRG 211 - OOP 2\Assignments\Assignment 3\Assignment_3_skeleton\CPRG211-Assignment3\Assignment_3_skeleton\obj\Debug\Assignment_3_skeleton.exe
 C:\Users\krist\Documents\School\CPRG 211 - OOP 2\Assignments\Assignment 3\Assignment_3_skeleton\CPRG211-Assignment3\Assignment_3_skeleton\obj\Debug\Assignment_3_skeleton.pdb
+C:\Users\jahsa\Documents\SAIT Winter 2024\CPRG 211 - OOP\Assignments\Assignment 3\Assignment 3 Skeleton\Assignment_3_skeleton\obj\Debug\Assignment_3_skeleton.csproj.AssemblyReference.cache
+C:\Users\jahsa\Documents\SAIT Winter 2024\CPRG 211 - OOP\Assignments\Assignment 3\Assignment 3 Skeleton\Assignment_3_skeleton\obj\Debug\Assignment_3_skeleton.csproj.CoreCompileInputs.cache
+C:\Users\jahsa\Documents\SAIT Winter 2024\CPRG 211 - OOP\Assignments\Assignment 3\Assignment 3 Skeleton\Assignment_3_skeleton\obj\Debug\Assignment_3_skeleton.exe
+C:\Users\jahsa\Documents\SAIT Winter 2024\CPRG 211 - OOP\Assignments\Assignment 3\Assignment 3 Skeleton\Assignment_3_skeleton\obj\Debug\Assignment_3_skeleton.pdb
+C:\Users\jahsa\Documents\SAIT Winter 2024\CPRG 211 - OOP\Assignments\Assignment 3\Assignment 3 Skeleton\Assignment_3_skeleton\bin\Debug\Assignment_3_skeleton.exe.config
+C:\Users\jahsa\Documents\SAIT Winter 2024\CPRG 211 - OOP\Assignments\Assignment 3\Assignment 3 Skeleton\Assignment_3_skeleton\bin\Debug\Assignment_3_skeleton.exe
+C:\Users\jahsa\Documents\SAIT Winter 2024\CPRG 211 - OOP\Assignments\Assignment 3\Assignment 3 Skeleton\Assignment_3_skeleton\bin\Debug\Assignment_3_skeleton.pdb
