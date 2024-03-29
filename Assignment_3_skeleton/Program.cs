@@ -61,6 +61,8 @@ namespace Assignment_3_skeleton
             Console.WriteLine($"\nCheck list for item: Rin Tin Tin \nItem exists: {linkedList.Contains("Rin Tin Tin")}\n");
             linkedList.Display();
 
+
+
             Console.ReadKey();
 
         }

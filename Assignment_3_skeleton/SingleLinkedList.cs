@@ -259,5 +259,18 @@ namespace Assignment_3_skeleton
             }
             return nodeArray;
         }
+
+        public User GetUserInfo(int index)
+        {
+            Node currentNode = head;
+
+            for (int i = 0; i < index; i++)
+            {
+                currentNode = currentNode.Next;
+            }
+
+            User user = (User)currentNode.Data;
+            return user;
+        }
     }
 }
