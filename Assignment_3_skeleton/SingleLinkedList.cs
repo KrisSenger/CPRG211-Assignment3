@@ -2,14 +2,22 @@
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Assignment_3_skeleton
 {
+    [KnownType(typeof(SingleLinkedList))]
+    [KnownType(typeof(Node))]
+    [KnownType(typeof(User))]
+    [Serializable]
+    [DataContract]
     public class SingleLinkedList : ILinkedListADT
     {
+        [DataMember]
         private Node head;
+        [DataMember]
         private int listSize;
 
         public SingleLinkedList()

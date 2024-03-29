@@ -10,21 +10,21 @@ namespace Assignment_3_skeleton
 {
     public static class SerializationHelper
     {
-        public static void SerializeUsers(List<User> users, string fileName)
+        public static void SerializeUsers(SingleLinkedList users, string fileName)
         {
-            DataContractSerializer serializer = new DataContractSerializer(typeof(List<User>));
+            DataContractSerializer serializer = new DataContractSerializer(typeof(SingleLinkedList));
             using (FileStream stream = File.Create(fileName))
             {
                 serializer.WriteObject(stream, users);
             }
         }
 
-        public static List<User> DeserializeUsers(string fileName)
+        public static SingleLinkedList DeserializeUsers(string fileName)
         {
-            DataContractSerializer serializer = new DataContractSerializer(typeof(List<User>));
+            DataContractSerializer serializer = new DataContractSerializer(typeof(SingleLinkedList));
             using (FileStream stream = File.OpenRead(fileName))
             {
-                return (List<User>)serializer.ReadObject(stream);
+                return (SingleLinkedList)serializer.ReadObject(stream);
             }
         }
     }
