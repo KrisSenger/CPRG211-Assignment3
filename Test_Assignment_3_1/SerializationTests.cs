@@ -39,13 +39,9 @@ namespace Test_Assignment_3
         [Test]
         public void TestDeSerialization()
         {
-            users.Append((new User(1, "Joe Blow", "jblow@gmail.com", "password")));
-            users.Append(new User(2, "Joe Schmoe", "joe.schmoe@outlook.com", "abcdef"));
-            users.Append(new User(3, "Colonel Sanders", "chickenlover1890@gmail.com", "kfc5555"));
-            users.Append(new User(4, "Ronald McDonald", "burgers4life63@outlook.com", "mcdonalds999"));
             SerializationHelper.SerializeUsers(users, testFileName);
             SingleLinkedList deserializedUsers = (SingleLinkedList)SerializationHelper.DeserializeUsers(testFileName);
-            Assert.AreEqual(8, deserializedUsers.Size());
+            Assert.That(deserializedUsers.Size(), Is.EqualTo(users.Size()));
             //Assert.That(deserializedUsers.Size(), Is.EqualTo(users.Size()));
             //for (int i = 0; i < users.Size(); i++)
             //{
