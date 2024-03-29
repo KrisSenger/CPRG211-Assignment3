@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assignment_3_skeleton
 {
@@ -271,6 +266,29 @@ namespace Assignment_3_skeleton
 
             User user = (User)currentNode.Data;
             return user;
+        }
+
+        // Reverse the order of the nodes in the linked list 
+        public void Reverse()
+        {
+            if (head == null || head.Next == null)
+            {
+                return; // if it is an empty list or there is only one node, there is no need to reverse
+            }
+
+            Node previousNode = null;
+            Node currentNode = head;
+            Node nextNode = null;
+
+            while (currentNode != null)
+            {
+                nextNode = currentNode.Next;
+                currentNode.Next = previousNode;
+                previousNode = currentNode;
+                currentNode = nextNode;
+            }
+
+            head = previousNode;
         }
     }
 }
