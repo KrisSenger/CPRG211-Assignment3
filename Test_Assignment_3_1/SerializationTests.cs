@@ -49,10 +49,10 @@ namespace Test_Assignment_3
             for (int i = 0; i < userCount; i++)
             {
                 Assert.That(users.Retrieve(i).ToString(), Is.EqualTo(deserializedUsers.Retrieve(i).ToString()));
-                // Assert.AreEqual(users[i].Id, deserializedUsers[i].Id);
-                // Assert.AreEqual(users[i].Name, deserializedUsers[i].Name);
-                // Assert.AreEqual(users[i].Email, deserializedUsers[i].Email);
-                // Assert.AreEqual(users[i].Password, deserializedUsers[i].Password);
+                Assert.AreEqual(users.GetUserInfo(i).Id, deserializedUsers.GetUserInfo(i).Id);
+                Assert.AreEqual(users.GetUserInfo(i).Name, deserializedUsers.GetUserInfo(i).Name);
+                Assert.AreEqual(users.GetUserInfo(i).Email, deserializedUsers.GetUserInfo(i).Email);
+                Assert.AreEqual(users.GetUserInfo(i).Password, deserializedUsers.GetUserInfo(i).Password);
             }
         }
 
