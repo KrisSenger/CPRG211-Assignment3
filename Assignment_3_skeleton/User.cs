@@ -11,9 +11,13 @@ namespace Assignment_3_skeleton
     [DataContract]
     public class User
     {
+        [DataMember]
         public int Id { get; set; }
+        [DataMember]
         public string Name { get; set; }
+        [DataMember]
         public string Email { get; set; }
+        [DataMember]
         public string Password;
 
         //Initializes a User object.

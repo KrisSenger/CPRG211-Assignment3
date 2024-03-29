@@ -9,14 +9,14 @@ namespace Test_Assignment_3
 {
     public class SerializationTests
     {
-        public SingleLinkedList users = new SingleLinkedList();
-        
+        private SingleLinkedList users;
         private readonly string testFileName = @"..\..\test_users.bin";
 
         [SetUp]
         public void Setup()
         {
-            users.Append((new User(1, "Joe Blow", "jblow@gmail.com", "password")));
+            users = new SingleLinkedList();
+            users.Append(new User(1, "Joe Blow", "jblow@gmail.com", "password"));
             users.Append(new User(2, "Joe Schmoe", "joe.schmoe@outlook.com", "abcdef"));
             users.Append(new User(3, "Colonel Sanders", "chickenlover1890@gmail.com", "kfc5555"));
             users.Append(new User(4, "Ronald McDonald", "burgers4life63@outlook.com", "mcdonalds999"));
@@ -25,7 +25,7 @@ namespace Test_Assignment_3
         [TearDown]
         public void TearDown()
         {
-            users.Clear();
+            this.users.Clear();
         }
 
         //Tests the object was serialized.
@@ -41,15 +41,19 @@ namespace Test_Assignment_3
         {
             SerializationHelper.SerializeUsers(users, testFileName);
             SingleLinkedList deserializedUsers = (SingleLinkedList)SerializationHelper.DeserializeUsers(testFileName);
-            Assert.That(deserializedUsers.Size(), Is.EqualTo(users.Size()));
-            //Assert.That(deserializedUsers.Size(), Is.EqualTo(users.Size()));
-            //for (int i = 0; i < users.Size(); i++)
-            //{
-            //    Assert.That(deserializedUsers.Retrieve(i), Is.EqualTo(users.Retrieve(i)));
-            //    Assert.AreEqual(users.Retrieve(i).Name, deserializedUsers.Retrieve(i).Name);
-            //    Assert.AreEqual(users.Retrieve(i).Email, deserializedUsers.Retrieve(i).Email);
-            //    Assert.AreEqual(users[i].Password, deserializedUsers[i].Password);
-            //}
+
+            int userCount = users.Size();
+            int deserializedUserCount = deserializedUsers.Size();
+            Assert.That(userCount, Is.EqualTo(deserializedUserCount));
+
+            for (int i = 0; i < userCount; i++)
+            {
+                Assert.That(users.Retrieve(i).ToString(), Is.EqualTo(deserializedUsers.Retrieve(i).ToString()));
+                // Assert.AreEqual(users[i].Id, deserializedUsers[i].Id);
+                // Assert.AreEqual(users[i].Name, deserializedUsers[i].Name);
+                // Assert.AreEqual(users[i].Email, deserializedUsers[i].Email);
+                // Assert.AreEqual(users[i].Password, deserializedUsers[i].Password);
+            }
         }
 
     }

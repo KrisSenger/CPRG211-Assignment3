@@ -11,8 +11,9 @@ namespace Assignment_3_skeleton
     [DataContract]
     public class Node
     {
+        [DataMember]
         public object Data { get; set; }
-
+        [DataMember]
         public Node Next { get; set; }
 
         public Node(object data)

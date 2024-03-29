@@ -15,7 +15,9 @@ namespace Assignment_3_skeleton
     [DataContract]
     public class SingleLinkedList : ILinkedListADT
     {
+        [DataMember]
         private Node head;
+        [DataMember]
         private int listSize;
 
         public SingleLinkedList()
