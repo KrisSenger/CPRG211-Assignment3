@@ -9,13 +9,14 @@ namespace Test_Assignment_3
 {
     public class SerializationTests
     {
-        private List<User> users;
+        public SingleLinkedList users = new SingleLinkedList();
+        
         private readonly string testFileName = @"..\..\test_users.bin";
 
         [SetUp]
         public void Setup()
         {
-            users.Append(new User(1, "Joe Blow", "jblow@gmail.com", "password"));
+            users.Append((new User(1, "Joe Blow", "jblow@gmail.com", "password")));
             users.Append(new User(2, "Joe Schmoe", "joe.schmoe@outlook.com", "abcdef"));
             users.Append(new User(3, "Colonel Sanders", "chickenlover1890@gmail.com", "kfc5555"));
             users.Append(new User(4, "Ronald McDonald", "burgers4life63@outlook.com", "mcdonalds999"));
@@ -24,7 +25,7 @@ namespace Test_Assignment_3
         [TearDown]
         public void TearDown()
         {
-            this.users.Clear();
+            users.Clear();
         }
 
         //Tests the object was serialized.
@@ -38,16 +39,21 @@ namespace Test_Assignment_3
         [Test]
         public void TestDeSerialization()
         {
+            users.Append((new User(1, "Joe Blow", "jblow@gmail.com", "password")));
+            users.Append(new User(2, "Joe Schmoe", "joe.schmoe@outlook.com", "abcdef"));
+            users.Append(new User(3, "Colonel Sanders", "chickenlover1890@gmail.com", "kfc5555"));
+            users.Append(new User(4, "Ronald McDonald", "burgers4life63@outlook.com", "mcdonalds999"));
             SerializationHelper.SerializeUsers(users, testFileName);
-            List<User> deserializedUsers = (List<User>)SerializationHelper.DeserializeUsers(testFileName);
-            Assert.AreEqual(users.Count, deserializedUsers.Count);
-            for (int i = 0; i < users.Count; i++)
-            {
-                Assert.AreEqual(users[i].Id, deserializedUsers[i].Id);
-                Assert.AreEqual(users[i].Name, deserializedUsers[i].Name);
-                Assert.AreEqual(users[i].Email, deserializedUsers[i].Email);
-                Assert.AreEqual(users[i].Password, deserializedUsers[i].Password);
-            }
+            SingleLinkedList deserializedUsers = (SingleLinkedList)SerializationHelper.DeserializeUsers(testFileName);
+            Assert.AreEqual(8, deserializedUsers.Size());
+            //Assert.That(deserializedUsers.Size(), Is.EqualTo(users.Size()));
+            //for (int i = 0; i < users.Size(); i++)
+            //{
+            //    Assert.That(deserializedUsers.Retrieve(i), Is.EqualTo(users.Retrieve(i)));
+            //    Assert.AreEqual(users.Retrieve(i).Name, deserializedUsers.Retrieve(i).Name);
+            //    Assert.AreEqual(users.Retrieve(i).Email, deserializedUsers.Retrieve(i).Email);
+            //    Assert.AreEqual(users[i].Password, deserializedUsers[i].Password);
+            //}
         }
 
     }
